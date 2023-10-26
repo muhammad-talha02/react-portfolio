@@ -1,7 +1,15 @@
 import "./App.scss"
+import { Hero, Navbar } from "./components"
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <section>
+      <Navbar/>
+      </section>
+      <Hero/>
+      <Hero/>
+      <Hero/>
+    </div>
   )
 }
 
