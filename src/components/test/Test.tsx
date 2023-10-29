@@ -1,15 +1,36 @@
 import { motion } from "framer-motion"
 import "./test.scss"
 const Test = () => {
+
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: (i:number) => ({
+      opacity: 1,
+      //  x: 100, 
+      transition: {
+        delay: i * 0.8
+      }
+    }),
+  }
+
+  const items = [
+    "items1",
+    "items2",
+    "items3",
+    "items4",
+  ]
   return (
     <div className="course">
-      <motion.div className="Box" 
-      initial={{opacity:0, scale:0.5}}
-      animate={{
-        opacity:1 , scale:1
-      }} transition={{duration:2, delay:0.5}}>
+      <motion.ul initial="hidden" animate="visible" variants={variants}>
+        {
+          items.map((item, i) => (
 
-      </motion.div>
+            <motion.li key={item} variants={variants} custom={i}>
+              {item}
+            </motion.li>
+          ))
+        }
+      </motion.ul>
     </div>
   )
 }
