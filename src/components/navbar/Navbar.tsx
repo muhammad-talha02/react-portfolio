@@ -1,8 +1,10 @@
 import { motion } from "framer-motion"
 import "./navbar.scss"
+import { Sidebar } from ".."
 const Navbar = () => {
     return (
         <div className="navbar">
+            <Sidebar/>
             <div className="wrapper">
                 <motion.div className="logo" initial={{ opacity: 0, scale: 0.5 }}
                     animate={{
