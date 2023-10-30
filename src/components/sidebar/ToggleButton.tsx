@@ -1,5 +1,8 @@
+import { Dispatch, SetStateAction } from "react"
+
 type ToogleButtonProps = {
-  setOpen: (value: boolean | ((prevVal: boolean) => boolean)) => void
+  setOpen: Dispatch<SetStateAction<boolean>>
+  // setOpen: (value: boolean | ((prevVal: boolean) => boolean)) => void
 }
 
 const ToggleButton = ({ setOpen }: ToogleButtonProps) => {

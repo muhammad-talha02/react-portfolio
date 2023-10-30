@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
      <div>
-       <section>
+       <section id="Home">
        <Navbar/>
        </section>
        <Hero/>
