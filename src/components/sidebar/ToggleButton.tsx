@@ -1,10 +1,10 @@
 type ToogleButtonProps = {
-  setOpen: (prev) => void
+  setOpen: (value: boolean | ((prevVal: boolean) => boolean)) => void
 }
 
 const ToggleButton = ({ setOpen }: ToogleButtonProps) => {
   return (
-    <button onClick={() => setOpen((prev)=>!prev)}>Button</button>
+    <button onClick={() => setOpen((prev) => !prev)}>Button</button>
   )
 }
 
