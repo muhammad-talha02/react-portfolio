@@ -65,9 +65,11 @@
 
     .slidingText {
         position: absolute;
-        font-size: 30vh;
+        font-size: 20vh;
         bottom: 0;
         color: #ffffff1f;
         white-space: nowrap;
+        font-weight: bold;
+        width: 50%;
     }
 }
