@@ -9,10 +9,10 @@ const App = () => {
      <div>
        <section id="Home">
        <Navbar/>
+       <Hero/>
        </section>
-       <Hero/>
-       <Hero/>
-       <Hero/>
+       {/* <Hero/> */}
+       {/* <Hero/> */}
     </div>
     {/* <Test/> */}
     {/* <Test/> */}
