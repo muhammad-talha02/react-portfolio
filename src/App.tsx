@@ -1,5 +1,5 @@
 import "./App.scss"
-import { Hero, Navbar, Parallex, Services } from "./components"
+import { Hero, Navbar, Parallex, Portfolio, Services } from "./components"
 const App = () => {
 
 
@@ -16,9 +16,13 @@ const App = () => {
        <section>
        <Services/>
        </section>
-       <section id="works">
+       {/* <section id="works">
+       <Parallex/>
+       </section> */}
+       <section id="portfolio">
        <Parallex/>
        </section>
+       <Portfolio/>
        {/* <Hero/> */}
        {/* <Hero/> */}
     </div>
