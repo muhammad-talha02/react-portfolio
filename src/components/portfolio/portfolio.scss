@@ -16,4 +16,60 @@
             border-radius: 20px;
         }
     }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .wrapper {
+            max-width: 1240px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+
+            .imageContainer {
+
+                flex: 1;
+                height: 50%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .textContainer {
+                flex: 1;
+                display: flex;
+                gap: 30px;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 60px;
+                }
+
+                p {
+                    color: gray;
+                    font-size: 20px;
+                }
+
+                button {
+                    background-color: orange;
+                    border: none;
+                    padding: 10px;
+                    width: 200px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
