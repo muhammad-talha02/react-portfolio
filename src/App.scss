@@ -10,7 +10,7 @@ $theme-bg : #0c0c1d;
 $theme-text : #d3d3d3;
 
 html {
-    // scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -26,5 +26,5 @@ section {
 
 a {
     text-decoration: none;
-    color: inh;
+    color: inherit;
 }
