@@ -12,22 +12,22 @@ const App = () => {
           <Navbar />
           <Hero />
         </section>
-        <section id="services">
+        {/* <section id="services">
           <Parallex type="services" />
-        </section>
-        <section>
+        </section> */}
+        {/* <section>
           <Services />
-        </section>
+        </section> */}
         {/* <section id="works">
        <Parallex/>
        </section> */}
-        <section id="portfolio">
+        {/* <section id="portfolio">
           <Parallex />
-        </section>
-        <Portfolio />
-        <section id="contact">
+        </section> */}
+        {/* <Portfolio /> */}
+        {/* <section id="contact">
           <Contact />
-        </section>
+        </section> */}
         {/* <Hero/> */}
         {/* <Hero/> */}
       </div>
