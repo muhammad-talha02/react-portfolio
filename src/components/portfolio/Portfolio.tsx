@@ -20,7 +20,7 @@ const SingleProject = ({ item }: SInglePorjectProps) => {
 
     const y = useTransform(scrollYProgress, [0, 1], [-300, 300])
     return (
-        <section >
+        <section style={{height:"100vh"}}>
             <div className="container">
                 <div className="wrapper">
                     <div className="imageContainer" ref={ref}>

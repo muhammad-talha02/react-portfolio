@@ -1,11 +1,13 @@
 import "./App.scss"
 import { Contact, Hero, Navbar, Parallex, Portfolio, Services } from "./components"
+import Cursor from "./components/cursor.scss/Cursor"
 const App = () => {
 
 
   return (
     <>
       <div>
+        <Cursor/>
         <section id="Home">
           <Navbar />
           <Hero />
@@ -16,12 +18,12 @@ const App = () => {
         <section>
           <Services />
         </section>
-        {/* <section id="works">
+        <section id="works">
        <Parallex/>
-       </section> */}
-        <section id="portfolio">
+       </section>
+        {/* <section id="portfolio">
           <Parallex />
-        </section>
+        </section> */}
         <Portfolio />
         <section id="contact">
           <Contact />

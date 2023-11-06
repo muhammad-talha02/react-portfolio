@@ -1,3 +1,6 @@
+@import "../../App.scss";
+
+
 .hero {
     height: calc(100vh - 90px);
     background: linear-gradient(180deg, #0c0c1d, #111132);
@@ -11,16 +14,26 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
+        padding: 10px;
+
+        @include mobile {
+            flex-direction: column;
+        }
 
         .imgContainer {
+            display: flex;
+            justify-content: center;
 
             // position: absolute;
             // top: 0;
             // right: 0;
             img {
-                width: 80%;
-                // height: 50%;
+                // object-fit: cover;
+                width: 100%;
 
+                @include mobile {
+                    // height: 50%;
+                }
             }
         }
 
@@ -30,18 +43,40 @@
             flex-direction: column;
             gap: 30px;
 
+            @include mobile {
+                gap: 20px;
+                align-items: center;
+            }
+
+            // justify-content: center;
+
             h2 {
                 font-size: 30px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
+
+                @include mobile {
+                    letter-spacing: 2px;
+                    text-align: center;
+                }
             }
 
             h1 {
                 font-size: 60px;
                 letter-spacing: 3px;
+
+                @include mobile {
+                    text-align: center;
+                    font-size: 40px;
+                }
             }
 
             .heroButtons {
+                @include mobile {
+                    display: flex;
+                    justify-content: center
+                }
+
                 button {
                     padding: 20px;
                     border: 1px solid #fff;
