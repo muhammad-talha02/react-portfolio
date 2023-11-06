@@ -12,19 +12,19 @@ const App = () => {
           <Navbar />
           <Hero />
         </section>
-        {/* <section id="services">
+        <section id="services">
           <Parallex type="services" />
-        </section> */}
-        {/* <section>
+        </section>
+        <section>
           <Services />
-        </section> */}
-        {/* <section id="works">
+        </section>
+        <section id="works">
        <Parallex/>
-       </section> */}
+       </section>
         {/* <section id="portfolio">
           <Parallex />
         </section> */}
-        {/* <Portfolio /> */}
+        <Portfolio />
         {/* <section id="contact">
           <Contact />
         </section> */}
