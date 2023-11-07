@@ -12,7 +12,7 @@ type SInglePorjectProps = {
 }
 const SingleProject = ({ item }: SInglePorjectProps) => {
 
-    const ref = useRef()
+    const ref = useRef(null)
     const { scrollYProgress } = useScroll({
         target: ref,
         // offset: ["start start", "end start"]
@@ -38,8 +38,8 @@ const SingleProject = ({ item }: SInglePorjectProps) => {
 }
 
 const Portfolio = () => {
-    const ref = useRef()
-    const { scrollYProgress } = useScroll<any>({
+    const ref = useRef(null)
+    const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["end end", "start start"]
     })

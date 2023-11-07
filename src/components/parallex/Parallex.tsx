@@ -6,7 +6,7 @@ type parallexProps = {
 }
 
 const Parallex = ({ type }: parallexProps) => {
-    const parallexRef = useRef()
+    const parallexRef = useRef(null)
     const { scrollYProgress } = useScroll({
         target: parallexRef,
         offset: ['start start', "end start"]
