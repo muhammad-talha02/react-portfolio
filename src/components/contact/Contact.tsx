@@ -4,8 +4,8 @@ import { useRef } from "react"
 const Contact = () => {
 
 
-    const ref = useRef()
-    const InView = useInView(ref, { margin: "-100px" })
+    const ref = useRef(null)
+    // const InView = useInView(ref, { margin: "-100px" })
 
     const varinats = {
         initial: {

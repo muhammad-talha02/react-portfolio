@@ -1,6 +1,6 @@
 import "./App.scss"
 import { Contact, Hero, Navbar, Parallex, Portfolio, Services } from "./components"
-import Cursor from "./components/cursor.scss/Cursor"
+import Cursor from "./components/cursor/Cursor"
 const App = () => {
 
 
