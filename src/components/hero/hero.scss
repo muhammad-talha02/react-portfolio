@@ -19,30 +19,47 @@
         @include mobile {
             flex-direction: column;
         }
-
+        @include tablet {
+            flex-direction: column;
+        }
+        
         .imgContainer {
             display: flex;
             justify-content: center;
-
+            
             // position: absolute;
             // top: 0;
             // right: 0;
             img {
                 // object-fit: cover;
                 width: 100%;
-
+                
                 @include mobile {
                     // height: 50%;
                 }
             }
         }
-
+        
+        .heroSkillContainer {
+            // width: 50%;
+            margin-top: -50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mobile {
+                margin-top: 20px;
+            }
+            // @include tablet {
+            //     flex-direction: column;
+            // }
+        }
+        
         .intro {
             margin: auto;
             display: flex;
             flex-direction: column;
             gap: 30px;
-
+            
             @include mobile {
                 gap: 20px;
                 align-items: center;
