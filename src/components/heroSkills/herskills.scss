@@ -26,8 +26,8 @@
     // transform: rotate3d(1, 1, 1, 90deg);    
 
     @include mobile {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .profileBox {
@@ -47,13 +47,17 @@
             // left: 5%;
             // top: 15px;
             // left: 10px;
-            width: 300px;
-            height: 295px;
+            width: 200px;
+            height: 195px;
         }
         
         img {
             width: 100%;
             margin-top: 35px;
+            @include mobile {
+                margin-top: 15px;
+
+            }
         }
     }
     
@@ -68,8 +72,8 @@
         // background-color: red;
         // margin-top: 0px;
         @include mobile {
-            width: 300px;
-            height: 295px;
+            width: 200px;
+            height: 195px;
         }
         .circle {
             display: block;

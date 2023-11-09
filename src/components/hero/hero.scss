@@ -2,7 +2,7 @@
 
 
 .hero {
-    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
     background: linear-gradient(180deg, #0c0c1d, #111132);
     overflow: hidden;
     position: relative;
@@ -84,7 +84,7 @@
 
                 @include mobile {
                     text-align: center;
-                    font-size: 40px;
+                    font-size: 36px;
                 }
             }
 
@@ -102,6 +102,9 @@
                     color: #fff;
                     cursor: pointer;
                     margin-right: 20px;
+                    @include mobile {
+                        padding: 15px;
+                    }
                 }
 
                 button:last-child {
@@ -124,5 +127,8 @@
         white-space: nowrap;
         font-weight: bold;
         width: 50%;
+        @include mobile {
+           display: none;
+        }
     }
 }
