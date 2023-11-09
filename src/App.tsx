@@ -1,5 +1,5 @@
 import "./App.scss"
-import { Contact, Hero, HeroSkills, Navbar, Parallex, Portfolio, Services } from "./components"
+import { Contact, Hero, HeroSkills, Navbar, Parallex, Portfolio, Services, Skills } from "./components"
 import Cursor from "./components/cursor/Cursor"
 const App = () => {
 
@@ -17,6 +17,9 @@ const App = () => {
         </section>
         <section>
           <Services />
+        </section>
+        <section>
+          <Skills/>
         </section>
         {/* <section id="works">
        <Parallex/>
