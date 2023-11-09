@@ -1,16 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     // font-family: "DM Sans" sans-serif;
-    font-family: 'Roboto Slab', serif;
+    // font-family: 'Roboto Slab', serif;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 $theme-bg : #0c0c1d;
 $theme-text : #d3d3d3;
 
 html {
-    scroll-snap-type: y mandatory;
+    // scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -22,7 +25,8 @@ body {
 
 section {
     // height: 100vh;
-    scroll-snap-align: center;
+    background-color: $theme-bg;
+    // scroll-snap-alig\\n: center;
 
 }
 

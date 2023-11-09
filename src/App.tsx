@@ -1,5 +1,6 @@
 import "./App.scss"
-import { Contact, Hero, Navbar, Parallex, Portfolio, Services } from "./components"
+import { Contact, Experiences, Hero, HeroSkills, Navbar, Parallex, Portfolio, Services, Skills } from "./components"
+// import Skills from "./components/skills/Skills"
 import Cursor from "./components/cursor/Cursor"
 const App = () => {
 
@@ -7,7 +8,7 @@ const App = () => {
   return (
     <>
       <div>
-        <Cursor/>
+        <Cursor />
         <section id="Home">
           <Navbar />
           <Hero />
@@ -18,18 +19,22 @@ const App = () => {
         <section>
           <Services />
         </section>
-        <section id="works">
+        <section>
+          <Skills />
+        </section>
+        <section>
+          <Experiences />
+        </section>
+        {/* <section id="works">
        <Parallex/>
-       </section>
-        {/* <section id="portfolio">
+       </section> */}
+        <section id="portfolio">
           <Parallex />
-        </section> */}
+        </section>
         <Portfolio />
         <section id="contact">
           <Contact />
         </section>
-        {/* <Hero/> */}
-        {/* <Hero/> */}
       </div>
       {/* <Test/> */}
       {/* <Test/> */}

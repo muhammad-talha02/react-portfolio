@@ -7,7 +7,10 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 40px 10px;
+    padding: 40px 20px;
+    max-width: 1240px;
+    margin: auto;
+
     @include mobile {
         // padding: 40px 10px;
         gap: 20px;
@@ -16,40 +19,44 @@
 
     .textContainer {
         flex: 1;
-        align-self: flex-end;
+        // align-self: flex-end;
         display: flex;
-        align-items: center;
-        gap: 20px;
+        // align-items: center;
+        gap: 5px;
+
+        flex-direction: column;
 
         @include mobile {
-            align-self: center;
-            flex-direction: column;
+            // align-self: center;
         }
 
         p {
             font-weight: 300;
             font-size: 20px;
             color: gray;
-            text-align: right;
+            // text-align: right;
         }
 
-        hr {
-            width: 500px;
-            border: none;
-            border-top: 0.5px solid gray;
+        h2 {
+            font-size: 40px;
+            // border: none;
+            // border-top: 0.5px solid gray;
 
-            @include mobile {
-                width: 300px;
+            // @include mobile {
+            //     width: 300px;
 
-            }
+            // }
         }
     }
 
     .titileContainer {
-        flex: 2;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        width: 100%;
+        max-width: 700px;
+        color: rgb(207, 207, 207);
+        // flex: 2;
+        // display: flex;
+        // align-items: center;
+        // flex-direction: column;
 
         @include mobile {
             width: 100%;
@@ -63,7 +70,7 @@
             @include mobile {
                 gap: 20px;
                 flex-direction: column;
-                text-align: center;
+                // text-align: center;
             }
 
             img {
@@ -71,6 +78,7 @@
                 height: 100px;
                 border-radius: 50px;
                 object-fit: cover;
+                display: none;
             }
 
             h1 {
@@ -91,11 +99,12 @@
                 background-color: orange;
                 font-size: 24px;
                 cursor: pointer;
+
                 @include mobile {
                     width: 150px;
                     font-size: 20px;
                     height: 50px;
-            
+
                 }
             }
         }
@@ -107,22 +116,38 @@
         max-width: 1240px;
         margin: auto;
 
+        margin-top: 40px;
+        gap: 20px;
+
         @include mobile {
-            margin-top: 10px;
             flex-direction: column;
             align-items: center;
         }
-        
+
         .box {
             padding: 30px;
             border: 0.5px solid gray;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            
+            border-radius: 5px;
+            // align-items: c;
+            gap: 20px;
+
+            &:hover img {
+                transform: rotate(360deg);
+                transition: all 0.8s ease-in-out;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin: auto;
+            }
+
             @include mobile {
-                gap: 20px;
-                border: none;
+                padding: 20px;
+                // border: none;
             }
 
             button {

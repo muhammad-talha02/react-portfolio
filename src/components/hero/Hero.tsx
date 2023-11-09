@@ -1,3 +1,4 @@
+import { HeroSkills } from ".."
 import "./hero.scss"
 import { motion } from "framer-motion"
 
@@ -51,9 +52,14 @@ const Hero = () => {
           </motion.div>
           <motion.img variants={textVariants} animate='scrollButton' src="/scroll.png" alt="" />
         </motion.div>
-        <div className="imgContainer">
-          <img src="/hero.png" alt="" />
+        <div className="heroSkillContainer">
+
+        <HeroSkills/>
         </div>
+
+        {/* <div className="imgContainer">
+          <img src="/hero.png" alt="" />
+        </div> */}
       </div>
       <motion.div className="slidingText" variants={slidTextVariants} initial="initial" animate="animate">
         Proramming Engineer and Manager

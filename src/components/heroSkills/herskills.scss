@@ -1,0 +1,132 @@
+@import "../../App.scss";
+
+// .heroSkills {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .Circle{
+//         margin: auto;
+//         width: 400px;
+//         height: 400px;
+//         border-radius: 50%;
+//         // background-color: #fff;
+//         border: 1px solid #fff;
+//         transform: rotate3d(1, 1, 1, 45deg);    }
+// }
+
+#parent-circle {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #fff;
+    // border-top: 2px solid red;
+    border-radius: 50%;
+    // transform:  rotate(0deg) !important;
+    // transform: rotate3d(1, 1, 1, 90deg);    
+
+    @include mobile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profileBox {
+        overflow: hidden;
+        transform: none !important;
+        // position: absolute;
+        width: 400px;
+        // background: #000;
+        height: 395px;
+        margin: auto;
+        border-radius: 50%;
+
+        // clip-path: circle(300px at 100px 100px);
+        // left: 3%;
+        // top: 40px;
+        @include mobile {
+            // left: 5%;
+            // top: 15px;
+            // left: 10px;
+            width: 200px;
+            height: 195px;
+        }
+        
+        img {
+            width: 100%;
+            margin-top: 35px;
+            @include mobile {
+                margin-top: 15px;
+
+            }
+        }
+    }
+    
+    .animates {
+        position: absolute;
+        top: 0px;
+        // transition: transform 0.7s linear;
+        animation: rotate 100s infinite linear;
+        // transform: rotate(45deg);
+        width: 400px;
+        height:  400px;
+        // background-color: red;
+        // margin-top: 0px;
+        @include mobile {
+            width: 200px;
+            height: 195px;
+        }
+        .circle {
+            display: block;
+            position: absolute;
+            width: 16%;
+            height: 16%;
+            margin: -8%;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mobile {
+            //    position: relative;
+            }
+
+            &.blue {
+                //   background-color: #416ba9;
+                transform: translate(200px); // parent size/2
+            }
+
+            &.pink {
+                //   background-color: #e6427a;
+                transform: rotate(90deg) translate(200px) rotate(-90deg);
+            }
+
+            &.lime {
+                //   background-color: #cddb00;
+                transform: rotate(90deg * 2) translate(200px) rotate(-90deg * 2);
+            }
+
+            &.orange {
+                //   background-color: #e0592a;
+                transform: rotate(90deg * 3) translate(200px) rotate(-90deg * 3);
+            }
+
+            &.teal {
+                //   background-color: #57b6b2;
+                transform: rotate(90deg * 4) translate(200px) rotate(-90deg * 4);
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+
+}
