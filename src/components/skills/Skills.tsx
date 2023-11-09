@@ -1,3 +1,4 @@
+import { WrapperComponent } from ".."
 import "./skills.scss"
 const Skills = () => {
     return (
@@ -88,4 +89,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default WrapperComponent(Skills, "experience")
