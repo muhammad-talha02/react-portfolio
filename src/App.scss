@@ -42,13 +42,13 @@ a {
 }
 
 @mixin tablet {
-    @media (max-width:1024px) {
+    @media (max-width:1024px) and (min-width:731px) {
         @content
     }
 }
 
 @mixin desktop {
-    @media (max-width:1240px) {
+    @media (max-width:1260px) {
         @content
     }
 }
