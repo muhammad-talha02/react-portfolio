@@ -118,6 +118,7 @@
 
         margin-top: 40px;
         gap: 20px;
+        // flex-wrap: wrap;
 
         @include mobile {
             flex-direction: column;
@@ -125,6 +126,7 @@
         }
 
         .box {
+            flex: 1;
             padding: 30px;
             border: 0.5px solid gray;
             display: flex;
@@ -133,6 +135,10 @@
             border-radius: 5px;
             // align-items: c;
             gap: 20px;
+
+            @include mobile {
+                //    flex:auto
+            }
 
             &:hover img {
                 transform: rotate(360deg);
@@ -149,23 +155,35 @@
                 padding: 20px;
                 // border: none;
             }
-
-            button {
-                padding: 10px;
-                background-color: orange;
-                border: none;
-                cursor: pointer;
-                font-size: 24px;
-
+            h2{
                 @include mobile {
-                    background-color: transparent;
-                    border: 1px solid orange;
-                    border-radius: 8px;
-                    color: orange;
-                    width: 50%;
-                    margin: auto;
+                   font-size: 24px;
+                   text-align: center;
                 }
             }
+
+            p {
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            // button {
+            //     padding: 10px;
+            //     background-color: orange;
+            //     border: none;
+            //     cursor: pointer;
+            //     font-size: 24px;
+
+            //     @include mobile {
+            //         background-color: transparent;
+            //         border: 1px solid orange;
+            //         border-radius: 8px;
+            //         color: orange;
+            //         width: 50%;
+            //         margin: auto;
+            //     }
+            // }
         }
     }
 }

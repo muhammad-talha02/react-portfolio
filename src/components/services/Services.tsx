@@ -46,25 +46,25 @@ const Services = () => {
                 <motion.div className="listContainer" variants={variants}>
                     <motion.div className="box" whileHover={{}}>
                         <img src="/services/web.png" alt="" />
-                        <h2>Branding</h2>
+                        <h2>Front End Developer</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis mollitia vero.</p>
                         {/* <button>GO</button> */}
                     </motion.div>
                     <motion.div className="box" whileHover={{}}>
                         <img src="/services/web.png" alt="" />
-                        <h2>Branding</h2>
+                        <h2>Front End Developer</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis mollitia vero.</p>
                         {/* <button>GO</button> */}
                     </motion.div>
                     <motion.div className="box" whileHover={{}}>
                         <img src="/services/web.png" alt="" />
-                        <h2>Branding</h2>
+                        <h2>Front End Developer</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis mollitia vero.</p>
                         {/* <button>GO</button> */}
                     </motion.div>
                     <motion.div className="box" whileHover={{}}>
                         <img src="/services/web.png" alt="" />
-                        <h2>Branding</h2>
+                        <h2>Front End Developer</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis mollitia vero.</p>
                         {/* <button>GO</button> */}
                     </motion.div>
