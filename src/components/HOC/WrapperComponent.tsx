@@ -5,7 +5,9 @@ const WrapperComponent = (Component: FC<any>, idName: string) => {
     console.log("dfsfdfdf")
     return function HOC() {
         return (
-            <section id={idName}>
+            <section id={idName} style={{
+                // background: "linear-gradient(360deg, #0e0e27, #111132)"
+            }}>
                 <div className="container">
                     <Component />
                 </div>

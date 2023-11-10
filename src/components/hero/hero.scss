@@ -15,8 +15,9 @@
         display: flex;
         justify-content: space-between;
         padding: 10px;
-
-        @include mobile {
+margin-top: 15px;
+@include mobile {
+            margin-top: 5px;
             flex-direction: column;
         }
         @include tablet {
