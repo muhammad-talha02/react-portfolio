@@ -24,8 +24,9 @@
     border-radius: 50%;
     // transform:  rotate(0deg) !important;
     // transform: rotate3d(1, 1, 1, 90deg);    
-
-    @include mobile {
+margin-top: 50px;
+@include mobile {
+        margin-top: 5px;
         width: 200px;
         height: 200px;
     }
