@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import "./sidebar.scss"
 const Sidebar = () => {
     const [open, setOpen] = useState(false)
-    console.log(open)
+    // console.log(open)
     const variants = {
         open: {
             clipPath: "circle(1200px at 50px 50px)",

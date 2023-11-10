@@ -1,0 +1,29 @@
+.projects {
+    .container {
+        padding: 40px 10px;
+
+        h2 {
+            font-size: 40px;
+            margin: 0px 0px 25px 15px;
+            text-align: center;
+        }
+
+        .projectItems {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .projectItem {
+                // background: #0c0c1d;
+                background: #111132;
+                // width: 200px;
+                border-radius: 15px;
+                padding: 15px;
+
+
+            }
+        }
+    }
+}
