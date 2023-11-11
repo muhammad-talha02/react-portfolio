@@ -9,8 +9,9 @@
     align-items: center;
     gap: 50px;
     min-height: 100vh;
-
-    @include mobile {
+padding: 5px 20px;
+@include mobile {
+        padding: 5px 5px;
         flex-direction: column;
         padding-bottom: 50px;
     }
