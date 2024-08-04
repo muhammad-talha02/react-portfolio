@@ -3,7 +3,7 @@ const HeroSkills = () => {
     return (
         <div id="parent-circle">
             <div className="profileBox">
-                <img src="/hero.png" alt="" />
+                <img src="/he.jpeg" alt="" />
             </div>
             {/* <div className="animates">
                 <div style={{ }}>
@@ -16,6 +16,9 @@ const HeroSkills = () => {
                     </div>
                     <div className="circle lime">
                         <img src="/skills/tailwind.png" alt="" />
+                    </div>
+                    <div className="circle orange">
+                        <img src="/skills/mongodb.png" alt="" />
                     </div>
                     <div className="circle orange">
                         <img src="/skills/mongodb.png" alt="" />

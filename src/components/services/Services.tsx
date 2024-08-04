@@ -46,26 +46,26 @@ const Services = () => {
                 <motion.div className="listContainer" variants={variants}>
                     <motion.div className="box" whileHover={{}}>
                         <img src="/services/web.png" alt="" />
-                        <h2>Front End Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis mollitia vero.</p>
+                        <h2>User Interface Specialist</h2>
+                        <p>Specialized in creating visually appealing and user-friendly interfaces with modern web technologies.</p>
+                        {/* <button>GO</button> */}
+                    </motion.div>
+                    <motion.div className="box" whileHover={{}}>
+                        <img src="/services/backend.png" alt="" />
+                        <h2>Server-Side Architect</h2>
+                        <p>Experienced in developing robust server-side logic, databases, and APIs to power dynamic web applications.</p>
                         {/* <button>GO</button> */}
                     </motion.div>
                     <motion.div className="box" whileHover={{}}>
                         <img src="/services/web.png" alt="" />
-                        <h2>Front End Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis mollitia vero.</p>
+                        <h2>End-to-End Web Engineer</h2>
+                        <p>Versatile developer skilled in both front-end and back-end technologies, capable of building end-to-end web solutions.</p>
                         {/* <button>GO</button> */}
                     </motion.div>
                     <motion.div className="box" whileHover={{}}>
                         <img src="/services/web.png" alt="" />
-                        <h2>Front End Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis mollitia vero.</p>
-                        {/* <button>GO</button> */}
-                    </motion.div>
-                    <motion.div className="box" whileHover={{}}>
-                        <img src="/services/web.png" alt="" />
-                        <h2>Front End Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis mollitia vero.</p>
+                        <h2>JavaScript Solutions Expert</h2>
+                        <p>Proficient in JavaScript, building interactive and dynamic web applications with a strong focus on performance and functionality.</p>
                         {/* <button>GO</button> */}
                     </motion.div>
                 </motion.div>
