@@ -111,7 +111,7 @@
     }
 
     .listContainer {
-        flex: 2;
+        // flex: 2;
         display: flex;
         max-width: 1240px;
         margin: auto;
@@ -127,7 +127,7 @@
 
         .box {
             flex: 1;
-            padding: 30px;
+            padding: 30px 20px;
             border: 0.5px solid gray;
             display: flex;
             flex-direction: column;
